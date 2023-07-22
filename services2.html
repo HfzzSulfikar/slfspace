@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development Services | SLF SPACE</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/imgs/logo.jpg" alt="slf space">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+
+    <!-- Stylesheet -->
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, rgb(12, 200, 203) 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: rgb(12, 200, 203);
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: rgb(12, 200, 203);
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <h1 class="section-heading" style="margin-top: 35px;margin-bottom: 25px;font-size: 25px;">Development Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-shop"></i>
+            </div>
+            <h3>E-Commerce Website</h3>
+            <p>
+                We offer comprehensive e-commerce website development services that empower businesses to 
+                enhancing their digital presence and driving sales.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Business Website</h3>
+            <p>
+                Substrate offers professional and captivating business website development services, 
+                tailored to showcase your brand's uniqueness and drive unparalleled growth.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+                Showcase your accomplishments and projects elegantly with our portfolio website service,
+                 designed to create a captivating online presence for your professional achievements and creative ventures
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-android"></i>
+            </div>
+            <h3>Android Development</h3>
+            <p>
+                Enhance your company's online presence and customer engagement with our expert Android Development services, 
+                tailored to deliver innovative and user-friendly mobile applications
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-apple"></i>
+            </div>
+            <h3>iOS Development</h3>
+            <p>
+                Subscribe to our iOS Development service and unlock a world of innovative app solutions. Our expert team will guide you through the entire development process, delivering cutting-edge apps tailored to your needs.
+                Stay ahead in the app market with our seamless and reliable iOS development services.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p>
+                Transform your website with our top-notch Software Development services. Unlock new possibilities and enhance user experiences with our expert team of developers.
+                Stay ahead of the competition and achieve your business goals effortlessly
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style=" position: fixed;
+    left: 0;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;">
+      <p style="margin-top: 10px; color: white;">MORE DETAILS : <strong><a href="https://wa.me/916235827037" style="font-weight: boldr;text-decoration: none ;color: white;">+91 6235827037</a></strong></p>
+    </div>
+        <!-- core  -->
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    
+        <!-- bootstrap affix -->
+        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+        <!-- Creative Studio js -->
+  </body>
+</html>
