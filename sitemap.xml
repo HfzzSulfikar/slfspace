@@ -4,7 +4,7 @@
     <!-- Home Page -->
     <url>
         <loc>https://slfspace.com/</loc>
-        <lastmod>2024-01-07T12:00:00+00:00</lastmod>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,7 +12,7 @@
     <!-- About Page -->
     <url>
         <loc>https://slfspace.com#about</loc>
-        <lastmod>2024-01-07T12:00:00+00:00</lastmod>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -20,7 +20,7 @@
     <!-- Projects Page -->
     <url>
         <loc>https://portfolio.slfspace.com</loc>
-        <lastmod>2024-01-07T12:00:00+00:00</lastmod>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -28,7 +28,7 @@
     <!-- Service Page -->
     <url>
         <loc>https://slfspace.com#service</loc>
-        <lastmod>2024-01-07T12:00:00+00:00</lastmod>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -36,11 +36,23 @@
     <!-- Contact Page -->
     <url>
         <loc>https://slfspace.com#contact</loc>
-        <lastmod>2024-01-07T12:00:00+00:00</lastmod>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://slfspace.com/portfolio</loc>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://slfspace.com/service-pricing</loc>
+        <lastmod>2024-01-15T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Add more URLs for other pages as needed -->
+
 
 </urlset>
