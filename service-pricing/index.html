@@ -63,10 +63,10 @@
       <h5 class="card-title">WaaS - Website As a Service</h5>
       <small>For Individual Professionals </small>
       <br><br>
-      <span class="h2"> ₹ 499</span>/month
+      <span class="h2" id="waas-price">$ 15</span>/month
       
     </div>
-    <p class="card-text">As an individual professional, your personal brand deserves a compelling online presence. With our WaaS subscription, you ge</p>
+    <p class="card-text">As an individual professional, your personal brand deserves a compelling online presence. With our WaaS subscription</p>
 
   </div>
   <ul class="list-group list-group-flush">
@@ -104,7 +104,7 @@
                   <h5 class="card-title">LLG - LinkedIn Lead Generation</h5>
                   <small>For Small or Large Business</small>
                   <br><br>
-                  <span class="h2"> ₹ 2499</span>/month
+                  <span class="h2" id="llg-price">$65</span>/month
                   <br><br>
                 </div>
                 <p class="card-text">Cultivate meaningful connections and convert prospects into valuable leads through our strategic LinkedIn outreach.</p>
@@ -142,7 +142,7 @@
                   <h5 class="card-title">WAD - Web & App Development</h5>
                   <small>For Small or Large Business</small>
                   <br><br>
-                  <span class="h2"> ₹₹₹₹</span>/Depends
+                  <span class="h2" id="web-app-price"> $$$</span>/Depends
                   <br><br>
                 </div>
                 <p class="card-text">Transform your online footprint with our cutting-edge Web and App Development services, tailored to meet the unique needs of your business.</p>
@@ -166,13 +166,34 @@
             </div>
             <br>
       
-  </body>
+
 
 
   
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-
+  <script>
+    // Fetch user's IP information from ipinfo.io
+    fetch('https://ipinfo.io?token=59b12accb3b579')
+      .then(response => response.json())
+      .then(data => {
+        // Extract country from the response
+        const country = data.country;
+  
+        // Update prices based on the country
+        if (country === 'IN') {  // India
+          document.getElementById('waas-price').innerText = '₹ 499';
+          document.getElementById('llg-price').innerText = '₹ 2499';
+          document.getElementById('web-app-price').innerText = '₹₹₹';
+        } else {  // Not in India
+          document.getElementById('waas-price').innerText = '$20';
+          document.getElementById('llg-price').innerText = '$65';
+          document.getElementById('web-app-price').innerText = '$$$';
+        }
+      })
+      .catch(error => console.error('Error fetching IP information:', error));
+  </script>
+  
 </body>
 </html>
