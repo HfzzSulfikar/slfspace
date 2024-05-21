@@ -214,27 +214,7 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-  <script>
-    // Fetch user's IP information from ipinfo.io
-    fetch('https://ipinfo.io?token=59b12accb3b579')
-      .then(response => response.json())
-      .then(data => {
-        // Extract country from the response
-        const country = data.country;
-  
-        // Update prices based on the country
-        if (country === 'IN') {  // India
-          document.getElementById('waas-price').innerText = '₹ 499';
-          document.getElementById('llg-price').innerText = '₹ 2499';
-          document.getElementById('web-app-price').innerText = '₹₹₹';
-        } else {  // Not in India
-          document.getElementById('waas-price').innerText = '$20';
-          document.getElementById('llg-price').innerText = '$65';
-          document.getElementById('web-app-price').innerText = '$$$';
-        }
-      })
-      .catch(error => console.error('Error fetching IP information:', error));
-  </script>
+
   
 </body>
 </html>
