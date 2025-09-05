@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Questionnaire Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f2ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        h1 {
+            color: #0a66c2;
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0a66c2;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #f3f2ef;
+            padding-bottom: 5px;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0a66c2;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #004182;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Investor Questionnaire Form</h1>
+        <form action="https://bygrovix.com/api/linkdify/v1/form/investor-questionnaire-form"  method="POST" enctype="multipart/form-data">
+            <!-- Company Basics -->
+            <h2>📌 Company Basics</h2>
+            <label>Year Founded</label>
+            <input type="number" name="yearFounded" placeholder="Enter year">
+
+            <label>Founders & Key Team Members</label>
+            <textarea name="founders" placeholder="List founders and key team members"></textarea>
+
+            <label>Mission & Vision</label>
+            <textarea name="missionVision" placeholder="Describe your mission and vision"></textarea>
+
+            <label>Current Team Size</label>
+            <input type="number" name="teamSize" placeholder="Enter team size">
+
+            <!-- Financial Performance -->
+            <h2>📌 Financial Performance</h2>
+            <label>Monthly Recurring Revenue (MRR)</label>
+            <input type="number" name="mrr" placeholder="Enter MRR in USD">
+
+            <label>Annual Recurring Revenue (ARR)</label>
+            <input type="number" name="arr" placeholder="Enter ARR in USD">
+
+            <label>Gross Margin %</label>
+            <input type="number" name="grossMargin" placeholder="Enter %">
+
+            <label>Monthly Operating Expenses (Burn Rate)</label>
+            <input type="number" name="burnRate" placeholder="Enter amount in USD">
+
+            <label>Runway (months)</label>
+            <input type="number" name="runway" placeholder="Enter months of runway">
+
+            <label>EBITDA (if applicable)</label>
+            <input type="number" name="ebitda" placeholder="Enter EBITDA">
+
+            <!-- Market & Customers -->
+            <h2>📌 Market & Customers</h2>
+            <label>Target Customer</label>
+            <textarea name="targetCustomer" placeholder="Describe your target customer"></textarea>
+
+            <label>Current Customer Count</label>
+            <input type="number" name="customerCount" placeholder="Enter number of customers">
+
+            <label>Customer Retention Rate (%)</label>
+            <input type="number" name="retentionRate" placeholder="Enter %">
+
+            <label>Customer Acquisition Cost (CAC)</label>
+            <input type="number" name="cac" placeholder="Enter CAC in USD">
+
+            <label>Customer Lifetime Value (LTV)</label>
+            <input type="number" name="ltv" placeholder="Enter LTV in USD">
+
+            <label>Churn Rate (%)</label>
+            <input type="number" name="churnRate" placeholder="Enter %">
+
+            <!-- Funding Details -->
+            <h2>📌 Funding Details</h2>
+            <label>Capital Raising in This Round</label>
+            <input type="number" name="capitalRaising" placeholder="Enter amount in USD">
+
+            <label>Minimum Ticket Size per Investor</label>
+            <input type="number" name="minTicketSize" placeholder="Enter minimum ticket size in USD">
+
+            <label>Pre-Money Valuation</label>
+            <input type="number" name="preMoneyValuation" placeholder="Enter valuation in USD">
+
+            <label>Equity Offered (%)</label>
+            <input type="number" name="equityOffered" placeholder="Enter %">
+
+            <label>Previous Rounds Raised</label>
+            <textarea name="previousRounds" placeholder="If yes, mention amount and valuation"></textarea>
+
+            <label>Cap Table (Ownership Structure)</label>
+            <textarea name="capTable" placeholder="List ownership structure"></textarea>
+
+            <!-- Business Model & Growth -->
+            <h2>📌 Business Model & Growth</h2>
+            <label>Business Model</label>
+            <select name="businessModel">
+                <option value="">Select</option>
+                <option value="B2B">B2B</option>
+                <option value="B2C">B2C</option>
+                <option value="SaaS">SaaS</option>
+                <option value="Marketplace">Marketplace</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Key Revenue Streams</label>
+            <textarea name="revenueStreams" placeholder="List revenue streams"></textarea>
+
+            <label>Top 3 Growth Strategies (Next 12 Months)</label>
+            <textarea name="growthStrategies" placeholder="Describe growth strategies"></textarea>
+
+            <label>Milestones Achieved</label>
+            <textarea name="milestonesAchieved" placeholder="List achieved milestones"></textarea>
+
+            <label>Next Major Milestones with This Funding</label>
+            <textarea name="nextMilestones" placeholder="List next milestones"></textarea>
+
+            <!-- Competition & Positioning -->
+            <h2>📌 Competition & Positioning</h2>
+            <label>Main Competitors</label>
+            <textarea name="competitors" placeholder="List competitors"></textarea>
+
+            <label>Competitive Advantage / USP</label>
+            <textarea name="usp" placeholder="Describe USP"></textarea>
+
+            <label>Market Size (TAM, SAM, SOM)</label>
+            <textarea name="marketSize" placeholder="Enter TAM, SAM, SOM"></textarea>
+
+            <label>Scaling Plan for New Markets</label>
+            <textarea name="scalingPlan" placeholder="Describe scaling plan"></textarea>
+
+            <!-- Investor Expectations -->
+            <h2>📌 Investor Expectations</h2>
+            <label>Target Investor Type</label>
+            <select name="investorType">
+                <option value="">Select</option>
+                <option value="VC">VC</option>
+                <option value="Angel">Angel</option>
+                <option value="Private Equity">Private Equity</option>
+                <option value="Family Office">Family Office</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Value Expected from Investors (besides funding)</label>
+            <textarea name="investorValue" placeholder="Mentorship, network, global access, etc."></textarea>
+
+            <label>Exit Strategy</label>
+            <select name="exitStrategy">
+                <option value="">Select</option>
+                <option value="IPO">IPO</option>
+                <option value="Acquisition">Acquisition</option>
+                <option value="Buyback">Buyback</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Expected ROI Timeline (years)</label>
+            <input type="number" name="roiTimeline" placeholder="Enter years">
+
+            <!-- Contact Info -->
+            <h2>📌 Contact Info</h2>
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Enter company name">
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email">
+
+            <label>Website</label>
+            <input type="text" name="website" placeholder="Enter website URL">
+
+            <!-- File Upload -->
+            <h2>📌 Attachments (if any)</h2>
+            <input type="file" name="attachments" multiple>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
